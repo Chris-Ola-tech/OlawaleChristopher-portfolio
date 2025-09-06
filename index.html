@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chris Portfoilo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* Start hidden at top */
+    .hidden-top {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+
+    /* Drop animation */
+    .drop {
+      transition: transform 3s ease, opacity 3s ease;
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+  </style>
+  <!-- color used -->
+<!-- Background → Dark Navy Blue #0A1A2F
+
+Primary Accent → Teal #00C2C7
+
+Secondary Accent → Electric Blue #1DAEFF
+
+Text / Contrast → White #F5F5F5
+
+Subtle Highlight → Aqua Green #20D0AC -->
+</head>
+
+<body class="bg-[#0A1A2F]">
+     
+<header class="w-full fixed top-0 z-50 bg-[#1DAEFF] hidden-top" id="main-header">
+  <div class="flex justify-between items-center h-[80px] px-6">
+    <!-- Logo -->
+    <div>
+      <img class="w-[120px] h-[120px]" src="./assests/images/Consultancy_Firm_Logo__C.W.__Geometric_Design-removebg-preview.png" alt="Logo">
+    </div>
+
+    <!-- Menu (desktop) -->
+    <ul class="hidden md:flex gap-8 md:flex-row " id="menu">
+      <li><a href="#home" class="text-[#F5F5F5] font-bold text-xl hover:text-[#0A1A2F] ">Home</a></li>
+      <li><a href="#about-me" class="text-[#F5F5F5] font-bold text-xl hover:text-[#0A1A2F]">About</a></li>
+      <li><a href="#projects" class="text-[#F5F5F5] font-bold text-xl hover:text-[#0A1A2F] ">Projects</a></li>
+      <li><a href="#skills" class="text-[#F5F5F5] font-bold text-xl hover:text-[#0A1A2F] ">Skills</a></li>
+      <li><a href="#contact" class="text-[#F5F5F5] font-bold text-xl hover:text-[#0A1A2F]">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger (mobile) -->
+    <img class="w-[40px] h-[40px] md:hidden cursor-[pointer]" src="./assests/images/more (1).png" alt="menu" id="menu-bar">
+  </div>
+</header>
+
+<main id="top">
+  <div class="relative inset-0">
+    <!-- Background Image -->
+    <img 
+      src="./assests/images/b3be3a3d7253c5e0d796574cae5a3391.jpg" 
+      alt="Background" 
+      class="w-full h-[70vh] md:h-screen object-cover"
+    >
+
+    <!-- Overlay Content -->
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 space-y-6" id="home">
+      <h1 class="text-white font-extrabold text-2xl sm:text-4xl md:text-5xl leading-snug">
+        My name is Christopher Olawale.<br>
+        <span id="typing-text"></span>
+      </h1>
+
+      <a href="#about-me" 
+         class="bg-[#00C2C7] px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-white font-semibold hover:bg-[#1DAEFF] transition">
+        Read more
+      </a>
+    </div>
+  </div>
+</main>
+
+
+<!-- About me section -->
+<section class="px-4 md:mx-12" id="about-me">
+  <h1 class="text-center text-[#F5F5F5] text-3xl md:text-5xl font-extrabold my-8 md:my-12">
+    About me:
+  </h1>
+
+  <div class="flex flex-col md:flex-row w-full gap-10 items-center md:items-start">
+    <!-- Left Side (Text) -->
+    <div class="w-full md:w-6/12">
+      <p class="text-base md:text-2xl text-[#F5F5F5] leading-relaxed">
+        Hi, my name is Olawale Christopher, and I’m a Web Developer with 2 years of hands-on experience.<br><br>
+
+        I began my coding journey over 3 years ago, learning through a mix of online platforms, physical classes, and real-world projects. This diverse background gave me not only the technical skills but also the ability to adapt quickly and deliver efficient solutions tailored to each client’s needs.<br><br>
+
+        I specialize in designing and coding clean, responsive, and user-friendly websites that perform well across all devices. From local business websites and blogs to e-commerce platforms, landing pages, and UI implementations, I’ve built projects that help brands and individuals establish a strong online presence.<br><br>
+
+        What sets me apart is my commitment to detail and communication — I don’t just write code; I translate your ideas into digital solutions that align with your vision. I work with speed, precision, and a problem-solving mindset, ensuring every project meets (and often exceeds) expectations.<br><br>
+
+        I’m always open to collaboration, whether it’s building something from scratch, improving an existing product, or bringing creative UI concepts to life. My goal is simple: deliver websites that not only look great but also work seamlessly for users.<br><br>
+
+        Feel free to explore my projects below — they showcase my passion for building impactful digital experiences.
+      </p>
+    </div>
+
+    <!-- Right Side (Image + Resume Button) -->
+    <div class="w-full md:w-6/12 flex flex-col items-center md:items-center justify-center space-y-6">
+      <!-- Image -->
+      <img 
+        src="./assests/images/WhatsApp_Image_2025-09-04_at_13.19.57_c68cf263-removebg-preview.png" 
+        alt="Profile"
+        class="w-64 md:w-80">
+
+      
+    </div>
+  </div>
+</section>
+
+<!-- Back to top -->
+<a href="#top" class="fixed bottom-6 right-6">
+  <img src="./assests/images/arrows.png" 
+       class="w-[50px] h-[50px] cursor-pointer hover:-translate-y-2 transition" 
+       alt="Go to top">
+</a>
+
+
+
+
+
+
+
+<h1 class="text-white text-3xl md:text-5xl font-bold text-center my-6" id="projects">
+  Projects :
+</h1>
+
+<main class="w-full flex items-center justify-center min-h-screen px-2">
+  <!-- Horizontal scroll container -->
+  <div class="flex overflow-x-auto space-x-4 snap-x snap-mandatory">
+    
+    <!-- Project 1 -->
+    <div class="snap-start min-w-full sm:min-w-[50%] lg:min-w-[33%] bg-[#1DAEFF] shadow-md rounded-xl p-4 h-[400px] flex flex-col items-center">
+      <img src="./assests/images/DIY Solar System Complete Guide - DIY Solar Panels.jpg" 
+           class="w-full h-48 object-cover rounded-md hover:scale-105 transition">
+      <p class="text-white text-sm my-4 text-center">
+        Dealthree Clean and renewable solar energy for homes and businesses.
+      </p>
+      <a href="#" class="bg-[#00C2C7] rounded hover:bg-[#148ecf] transition text-white py-2 px-4">
+        View Project
+      </a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="snap-start min-w-full sm:min-w-[50%] lg:min-w-[33%] bg-[#1DAEFF] shadow-md rounded-xl p-4 h-[400px] flex flex-col items-center">
+      <img src="./assests/images/Share your new blog with us - community matters!.jpg" 
+           class="w-full h-48 object-cover rounded-md hover:scale-105 transition">
+      <p class="text-white text-sm my-4 text-center">
+        Echo blog. Curated blogs covering topics that educate, inspire, and entertain readers.
+      </p>
+      <a href="#" class="bg-[#00C2C7] rounded hover:bg-[#148ecf] transition text-white py-2 px-4">
+        View Project
+      </a>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="snap-start min-w-full sm:min-w-[50%] lg:min-w-[33%] bg-[#1DAEFF] shadow-md rounded-xl p-4 h-[400px] flex flex-col items-center">
+      <img src="./assests/images/First grade of all kinds of wears.jpg" 
+           class="w-full h-48 object-cover rounded-md hover:scale-105 transition">
+      <p class="text-white text-sm my-4 text-center">
+        Okirika Like New, High-quality imported clothes for a fashionable, budget-friendly choice.
+      </p>
+      <a href="#" class="bg-[#00C2C7] rounded hover:bg-[#148ecf] transition text-white py-2 px-4">
+        View Project
+      </a>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="snap-start min-w-full sm:min-w-[50%] lg:min-w-[33%] bg-[#1DAEFF] shadow-md rounded-xl p-4 h-[400px] flex flex-col items-center">
+      <img src="./assests/images/Diese Sternzeichen sind besonders pflichtbewusst.jpg" 
+           class="w-full h-48 object-cover rounded-md hover:scale-105 transition">
+      <p class="text-white text-sm my-4 text-center">
+        TodoLIST, Keep your tasks organized and never miss an important item.
+      </p>
+      <a href="#" class="bg-[#00C2C7] rounded hover:bg-[#148ecf] transition text-white py-2 px-4">
+        View Project
+      </a>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="snap-start min-w-full sm:min-w-[50%] lg:min-w-[33%] bg-[#1DAEFF] shadow-md rounded-xl p-4 h-[400px] flex flex-col items-center">
+      <img src="./assests/images/download.jpg" 
+           class="w-full h-48 object-cover rounded-md hover:scale-105 transition">
+      <p class="text-white text-sm my-4 text-center">
+        Jasmine Professional haircuts, colors, and treatments to make you shine.
+      </p>
+      <a href="#" class="bg-[#00C2C7] rounded hover:bg-[#148ecf] transition text-white py-2 px-4">
+        View Project
+      </a>
+    </div>
+
+  </div>
+</main>
+
+
+
+
+
+
+ <!-- skills section -->
+  <div id="skills"></div>
+<h1 class="text-white text-5xl font-bold text-center my-4" >Skills:</h1>
+
+<div class="mx-12">
+   <div class="mb-4">
+  <p class="text-white mb-1">HTML</p>
+  <div class="w-full bg-gray-700 rounded-full h-3">
+    <div class="bg-[#00C2C7] h-3 rounded-full w-[90%]"></div>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p class="text-white mb-1">CSS</p>
+  <div class="w-full bg-gray-700 rounded-full h-3">
+    <div class="bg-[#00C2C7] h-3 rounded-full w-[85%]"></div>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p class="text-white mb-1">Java script</p>
+  <div class="w-full bg-gray-700 rounded-full h-3">
+    <div class="bg-[#00C2C7] h-3 rounded-full w-[80%]"></div>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p class="text-white mb-1">Tailwind</p>
+  <div class="w-full bg-gray-700 rounded-full h-3">
+    <div class="bg-[#00C2C7] h-3 rounded-full w-[70%]"></div>
+  </div>
+</div>
+
+<div class="mb-4">
+  <p class="text-white mb-1">React Js</p>
+  <div class="w-full bg-gray-700 rounded-full h-3">
+    <div class="bg-[#00C2C7] h-3 rounded-full w-[80%]"></div>
+  </div>
+</div>
+</div>
+
+<!-- contact section -->
+<section class="px-4 md:px-12 py-12" id="contact">
+  <!-- Section Title -->
+  <h1 class="text-white text-3xl md:text-5xl font-bold text-center mb-8">
+    Contact
+  </h1>
+
+  <!-- Flex Container -->
+  <div class="flex flex-col md:flex-row gap-10">
+    
+    <!-- LEFT: Contact Form (60%) -->
+    <div class="w-full md:w-3/5">
+      <form class="bg-transparent">
+        <!-- Name -->
+        <label for="Name" class="text-white">Name</label>
+        <input type="text" placeholder="Enter your Name" 
+               class="w-full rounded bg-[#00C2C7] text-white py-2 placeholder-white mb-6 pl-2">
+
+        <!-- Phone Number -->
+        <label for="Phone Number" class="text-white">Phone Number</label>
+        <input type="number" placeholder="Enter your Number" 
+               class="w-full rounded bg-[#00C2C7] text-white py-2 placeholder-white mb-6 pl-2">
+
+        <!-- Email -->
+        <label for="email" class="text-white">Email</label>
+        <input type="email" placeholder="Enter your Email" 
+               class="w-full rounded bg-[#00C2C7] text-white py-2 placeholder-white mb-6 pl-2">
+
+        <!-- Subject -->
+        <label for="subject" class="text-white">Subject</label>
+        <input type="text" placeholder="Enter your Subject" 
+               class="w-full rounded bg-[#00C2C7] text-white py-2 placeholder-white mb-6 pl-2">
+
+        <!-- Message -->
+        <label for="Message" class="text-white">Message</label>
+        <textarea placeholder="Enter your Message" 
+                  class="w-full rounded bg-[#00C2C7] text-white py-3 placeholder-white mb-6 pl-2 resize-none h-32"></textarea>
+
+        <!-- Button -->
+        <div class="flex">
+          <button type="button" 
+                  class="ml-auto py-3 px-6 bg-[#00C2C7] hover:bg-[#1DAEFF] font-bold rounded text-white">
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- RIGHT: Info (40%) -->
+    <div class="w-full md:w-2/5 px-4">
+      <!-- Intro -->
+      <div class="md:mx-4">
+        <h1 class="text-2xl md:text-3xl text-white my-4 font-bold">
+          Christopher Olawale
+        </h1>
+        <p class="text-white leading-relaxed">
+          Software Engineering Student | Frontend Developer.  
+          I am available for freelance projects and open to remote full-time opportunities.  
+          Let’s connect and build something amazing together.  
+
+          <br><br>
+          Phone: 
+          <a href="tel:+2348134260378" class="text-[#00C2C7] hover:underline">
+            +234 813 426 0378
+          </a>  
+
+          <br>
+          Email: 
+          <a href="mailto:christopherolawale31@gmail.com" class="text-[#00C2C7] hover:underline">
+            christopherolawale31@gmail.com
+          </a>
+        </p>
+      </div>
+
+      <!-- Social Media -->
+      <h1 class="text-center text-2xl md:text-3xl text-white font-bold my-6">
+        Find me on :
+      </h1>
+      <div class="flex flex-wrap gap-6 md:gap-10 my-8 justify-center items-center">
+        <a href="https://instagram.com" target="_blank">
+          <img src="./assests/images/instagram.png" 
+               class="w-10 h-10 md:w-12 md:h-12 transition-transform duration-300 hover:-translate-y-2 cursor-pointer">
+        </a>
+        <a href="https://www.facebook.com/share/19fTZcdPKN/?mibextid=wwXIfr" target="_blank">
+          <img src="./assests/images/facebook.png" 
+               class="w-10 h-10 md:w-12 md:h-12 transition-transform duration-300 hover:-translate-y-2 cursor-pointer">
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+          <img src="./assests/images/linkedin.png" 
+               class="w-10 h-10 md:w-12 md:h-12 transition-transform duration-300 hover:-translate-y-2 cursor-pointer">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="./assests/images/twitter.png" 
+               class="w-10 h-10 md:w-12 md:h-12 transition-transform duration-300 hover:-translate-y-2 cursor-pointer">
+        </a>
+        <a href="http://wa.me/2348134260378" target="_blank">
+          <img src="./assests/images/whatsapp.png" 
+               class="w-10 h-10 md:w-12 md:h-12 transition-transform duration-300 hover:-translate-y-2 cursor-pointer">
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<footer class="w-full bg-[#0A1A2F] flex items-center justify-center py-8 px-4">
+  <div class="text-center">
+    <!-- Logo -->
+    <img 
+      class="w-32 h-32 md:w-48 md:h-48 mx-auto mb-4" 
+      src="./assests/images/Consultancy_Firm_Logo__C.W.__Geometric_Design-removebg-preview.png" 
+      alt="Logo"
+    >
+
+    <!-- Copyright -->
+    <p class="text-white text-sm md:text-lg">
+      © 2025 Christopher Olawale. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+
+<script src="./script.js"></script>
+
+</body>
+</html>

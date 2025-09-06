@@ -1,11 +1,11 @@
-var menu = document.getElementById("menu")
-var menuBar = document.getElementById("menu-bar")
+  const menu = document.getElementById("menu");
+  const menuBar = document.getElementById("menu-bar");
 
-menuBar.addEventListener('click', () => {
-    menu.classList.toggle("hidden")
-    menu.classList.toggle("flex")
-    menu.classList.toggle("flex-col")
-})
+  menuBar.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+    menu.classList.toggle("flex");
+  });
+
 
 window.addEventListener("DOMContentLoaded", () => {
     const header = document.getElementById("main-header");
